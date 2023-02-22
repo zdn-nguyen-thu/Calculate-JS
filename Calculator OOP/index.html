@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Calculator</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+  <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="container">
+    <div id="header">
+      <h3>Javascript Calculator</h3>
+    </div>
+    <div id="calc">
+      <div id="display">
+        <p></p>
+        <div data-previous-operand id="result" class="previous-operand">0</div>
+        <div data-current-operand id="history" class="current-operand"></div>
+      </div>
+      <div id="keyboard">
+        <div class="row">
+          <button class="btn btn-info number">7</button>
+          <button class="btn btn-info number">8</button>
+          <button class="btn btn-info number">9</button>
+          <button data-all-clear class="btn btn-danger" onclick="delLastItem()">DEL</button>
+          <button data-delete class="btn btn-danger" onclick="delAll()">AC</button>
+        </div>
+        <div class="row">
+          <button class="btn btn-info number">4</button>
+          <button class="btn btn-info number">5</button>
+          <button class="btn btn-info number">6</button>
+          <button class="btn btn-warning operator">/</button>
+          <button class="btn btn-warning operator">*</button>
+        </div>
+        <div class="row">
+          <button class="btn btn-info number">1</button>
+          <button class="btn btn-info number">2</button>
+          <button class="btn btn-info number">3</button>
+          <button class="btn btn-warning operator">+</button>
+          <button data-equals class="btn btn-success span-two">=</button>
+        </div>
+        <div class="row last-row">
+          <button class="btn btn-zero btn-info number">0</button>
+          <button class="btn btn-warning operator">-</button>
+          <button class="btn btn-warning number">.</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
